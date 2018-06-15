@@ -1,0 +1,10 @@
+This is a plot of 'GDP per capita' VS 'Average life expectancy' of all the countries in the world
+Bubbles=countries
+Size of the bubble=population
+color= show region
+  {Green=Americas
+  Blue=Africa
+  Yellow=Europe
+  Red=Asia}
+ X-axis= GDP per capita
+ Y-axis= life expectancy in years
