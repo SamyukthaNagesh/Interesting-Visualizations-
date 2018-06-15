@@ -1,0 +1,23 @@
+
+"""
+My friends and I use this to decide who starts a game of uno, rummy or business. It is a simple bar plot coded in python
+It uses a random number generator to score people which changes everytime the program is run
+"""
+import matplotlib.pyplot as plt
+plt.rcdefaults()
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+# Example data
+people = ('Samy', 'Baba', 'Ranjani', 'Sagar', 'Thammudu')
+y_pos = np.arange(len(people))
+random_luck = 5 + 15 * np.random.rand(len(people))
+error = np.random.rand(len(people))
+
+plt.barh(y_pos, random_luck, xerr=error, align='center', alpha=0.4)
+plt.yticks(y_pos, people)
+plt.xlabel('Performance')
+plt.title('Who is the luckiest?')
+
+plt.show()
